@@ -1,0 +1,125 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color: gainsboro;
+    height: 80vh;
+    width: 100%;
+    display: flex;
+    margin-top: 20vh;
+    justify-content: center;
+}
+
+.clock{
+    border-radius: 100;
+    border: 5px solid transparent;
+    /* box-shadow: 0 -15px 15px black;  */
+}
+
+.clock .wrap{
+    width: 320px;
+    height: 320px;
+    overflow: hidden;
+    background-image: url(./pics/582-5828759_blank-clock-face-twenty-five-to-four-clock.png);
+    background-size: cover;
+    position: relative;
+    border-radius: 50%;
+    box-shadow: 0 -15px 15px transparent inset; 
+} 
+
+.h{
+    background-color: black;
+}
+.m, .h{
+    position: absolute;
+    height: 100px;
+    width: 6px;
+    margin: auto;
+    top: -28%;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    transform: rotate(0deg);
+    transform-origin: bottom center;
+    box-shadow: 0 0 10px 0 transparent;
+    z-index: 1;
+}
+
+.m{
+    position: absolute;
+    height: 130px;
+    width: 4px;
+    top: -38%;
+    left: 0;
+    right: 0;
+    box-shadow: 0 0 10px 0 transparent;
+    background-color: black;
+    transform: rotate(90deg);
+}
+
+.s{
+    position: absolute;
+    height: 120px;
+    width: 2px;
+    margin: auto;
+    top: -38%;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    transform: rotate(180deg);
+    transform-origin: bottom center;
+    background-color: dodgerblue;
+    z-index: 1;
+}
+
+.dot{
+    position: absolute;
+    height: 12px;
+    width: 12px;
+    top: 0;
+    margin: auto;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    border: 2px solid dodgerblue;
+    border-radius: 100px;
+    background-color: dodgerblue;
+    z-index: 1;
+}
+
+.Dates_am{
+    width: 300px;
+    height: 300px;
+    border-radius: 30vh;
+    justify-items: center;
+    margin-left: 10vh;
+    align-items: center;
+    box-shadow: 0 -15px 15px black 0 -15px 15px black;
+    background-color: whitesmoke;
+}
+
+.date{
+    width: 200px;
+    height: 20px;
+    float: left;
+    padding: 10px 15px;
+    margin-top: 13vh;
+    border-radius: 25vh;
+    margin-left: 6vh;
+    background-color: gainsboro;
+    text-align: center;
+    font-size: 20px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.am{
+    width: 200px;
+    height: 20px;
+    float: left;
+    padding: 10px 15px;
+    margin-top: 5vh;
+    border-radius: 25vh;
+    text-align: center;
+    margin-left: 6vh;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 20px;
+    background-color: gainsboro;
+}
